@@ -1,4 +1,9 @@
 """Black-box derivation of the AAC Huffman codebooks by probing the ffmpeg decoder (oracle only)."""
+import utils.net
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 import sys, json, math
 from concurrent.futures import ThreadPoolExecutor
 from probe import frame, silent, run, fit
